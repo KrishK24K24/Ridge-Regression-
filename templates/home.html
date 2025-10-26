@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Data Input Form</title>
+</head>
+<body>
+    <h2>Fire Prediction Data Form</h2>
+    <form action="{{url_for("predict_data")}}" method="post">
+        <label>Temperature:</label>
+        <input type="number" step="0.1" name="Temperature" required><br><br>
+
+        <label>Relative Humidity (RH):</label>
+        <input type="number" step="0.1" name="RH" required><br><br>
+
+        <label>Wind Speed (Ws):</label>
+        <input type="number" step="0.1" name="Ws" required><br><br>
+
+        <label>Rain:</label>
+        <input type="number" step="0.1" name="Rain" required><br><br>
+
+        <label>FFMC:</label>
+        <input type="number" step="0.1" name="FFMC" required><br><br>
+
+        <label>DMC:</label>
+        <input type="number" step="0.1" name="DMC" required><br><br>
+
+        <label>ISI:</label>
+        <input type="number" step="0.1" name="ISI" required><br><br>
+
+        <label>Classes:</label>
+        <select name="Classes" required>
+            <option value="">Select</option>
+            <option value="0">Fire</option>
+            <option value="1">Not Fire</option>
+        </select><br><br>
+
+        <label>Region:</label>
+        <select name="Region" required>
+            <option value="">Select</option>
+            <option value="0">North</option>
+            <option value="1">South</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <h1>The FWI is : {{result}}</h1>
+</body>
+</html>
