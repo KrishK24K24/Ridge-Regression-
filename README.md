@@ -138,4 +138,3 @@ This repository is provided for educational purposes. Check the project root for
 ---
 
 Happy experimenting — tweak the regularization strength and mixing parameters and see how the coefficients and predictions change!
-# Ridge-Regression
