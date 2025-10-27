@@ -8,8 +8,8 @@ application = Flask(__name__)
 app = application
 
 # Import Models
-ridge_model = pickle.load(open('Ridge Lassso Elastic Regression Practicals\\Model\\Ridge.pkl','rb'))
-Scalar = pickle.load(open('Ridge Lassso Elastic Regression Practicals\\Model\\Scalar.pkl','rb'))
+ridge_model = pickle.load(open('Model\\Ridge.pkl','rb'))
+Scalar = pickle.load(open('Model\\Scalar.pkl','rb'))
 
 @app.route('/')
 def index():
