@@ -1,0 +1,4 @@
+pickle
+numpy 
+pandas
+flask
